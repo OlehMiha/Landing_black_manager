@@ -1,0 +1,147 @@
+/* 4K*/
+@media only screen and (max-width:5920px) {
+
+}
+
+/* Full HD*/
+@media only screen and (max-width:1920px) {
+
+}
+
+
+/* Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+@media only screen and (max-width: 1200px) { 
+
+    
+}
+
+
+/* Большие девайсы (десктопы, <= 991px) */
+@media only screen and (max-width: 991px) { 
+
+    .container {
+        max-width: 100%;
+    }
+    
+    .header_block {
+        height: auto;
+        padding-bottom: 170px;
+        text-align: center;
+    }
+    .header_block .header_top_block h1,.header_block .header_top_block h2 {
+        padding-right: 0px;
+    }
+    .header_block .header_top_block {
+        position: static;
+        padding: 30px 15px;
+        padding-bottom: 40px;
+    }
+    .header_block img {
+        margin: 0 auto;
+    }
+    .email_form {
+        float: none;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .avtor_div {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .comment_div {
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .comment_div:before {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 800px) { 
+    .footer_div_top {
+        margin-bottom: 10px;
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    .footer_div_bot {
+        font-size: 14px;
+    }
+    .footer_div {
+        padding: 10px 0;
+    }
+}
+/* Средние девайсы («таблетки», <= 767px) */
+@media only screen and (max-width: 767px) { 
+    
+}
+@media only screen and (max-width: 730px) { 
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .header_block .header_top_block h2 {
+        margin-top: 5px;
+    }
+    .header_block img {
+        max-width: 80%;
+    }
+}
+
+/* Малые девайсы («ландшафтные телефоны», <= 575px) */
+@media only screen and (max-width: 575px) {
+    
+}
+
+@media only screen and (max-width: 535px) {
+   
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    .input_email_div:before {
+        display: none;
+    }
+    h3 {
+        font-size: 26px;
+    }
+
+    .top_form {
+        font-size: 18px;
+        line-height: 1.2;
+        margin: 0 auto;
+        margin-top: 8px;
+        max-width: 340px;
+        letter-spacing: 0.15px;
+    }
+}
+@media only screen and (max-width: 480px) {
+   .button_1.button_2 {
+        font-family: "MyriadProBold";
+        font-size: 18px;
+        width: 100%;
+        max-width: 570px;
+        background: #fccb00;
+        height: 80px;
+        border-bottom: 5px solid #dbb000;
+        color: #313131;
+        border-radius: 5px;
+    }
+}
+@media only screen and (max-width: 460px) {
+   .a_modal_mail_div {
+        text-align: center;
+    }
+}
+
+/* IPhone 5 */
+@media only screen and (max-width: 320px) {
+
+}
