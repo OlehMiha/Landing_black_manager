@@ -58,7 +58,6 @@
     .comment_div:before {
         display: none;
     }
-
 }
 
 @media only screen and (max-width: 800px) { 
@@ -76,7 +75,9 @@
 }
 /* Средние девайсы («таблетки», <= 767px) */
 @media only screen and (max-width: 767px) { 
-    
+    .hidden_mobi {
+        display: none;
+    }
 }
 @media only screen and (max-width: 730px) { 
     h1 {
@@ -95,7 +96,20 @@
 
 /* Малые девайсы («ландшафтные телефоны», <= 575px) */
 @media only screen and (max-width: 575px) {
-    
+    .footer_div_top span {
+        display: none;
+    }
+    .footer_div_top a {
+        display: block;
+    }
+    .button_1.button_2 {
+        height: 65px;
+    }
+    .block_2_bot {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 535px) {
@@ -124,23 +138,38 @@
 }
 @media only screen and (max-width: 480px) {
    .button_1.button_2 {
-        font-family: "MyriadProBold";
         font-size: 18px;
-        width: 100%;
-        max-width: 570px;
-        background: #fccb00;
-        height: 80px;
-        border-bottom: 5px solid #dbb000;
-        color: #313131;
-        border-radius: 5px;
     }
 }
 @media only screen and (max-width: 460px) {
    .a_modal_mail_div {
         text-align: center;
     }
+    .u_data span {
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .u_data {
+        padding: 0px;
+    }
 }
 
+@media only screen and (max-width: 440px) {
+    .hidden_mobi,.hidden_mobi_br {
+        display: none;
+    }
+    .input_email_div p {
+        font-size: 18px;
+    }
+    .block_2_top h2 {
+        font-size: 20px;
+    }
+    .block_2_top p {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+}
 /* IPhone 5 */
 @media only screen and (max-width: 320px) {
 
