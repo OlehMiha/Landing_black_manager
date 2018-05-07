@@ -152,6 +152,8 @@
     }
     .u_data {
         padding: 0px;
+        max-width: 230px;
+        margin: 0 auto;
     }
 }
 
