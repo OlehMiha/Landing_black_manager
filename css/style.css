@@ -390,7 +390,7 @@ a:hover {
 .input_email_div {
     position: relative;
 }
-.input_email_div p {
+#email_form .input_email_div p {
     font-family: "MyriadProBold";
     font-size: 21px;
     line-height: 1.2;
@@ -400,7 +400,7 @@ a:hover {
     letter-spacing: 0.2px;
 }
 
-.input_email_div:before {
+#email_form .input_email_div:before {
     content: '';
     position: absolute;
     top: 11px;
@@ -411,13 +411,13 @@ a:hover {
     background-position: center;
 }
 
-.u_data {
+#email_form .u_data {
     padding-left: 30px;
     font-size: 18px;
     letter-spacing: 0.15px;
     margin-top: 5px;
 }
-.u_data span{
+#email_form .u_data span{
     display: inline-block;
     width: 20px;
     height: 26px;

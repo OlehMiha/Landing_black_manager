@@ -179,81 +179,12 @@ var close = false;
      });
 
 
-    $("#manedj_form").submit(function() {
+    $("#email_form").submit(function() {
 
-        var th = $(this);
-        $.ajax({
-            type: "POST",
-            url: "zakaz.php", 
-            data: th.serialize()
-        }).done(function() {
-            
-            th.trigger("reset");
-            $('#exampleModal_1').modal('toggle');
-            setTimeout(function() {
-                $('#sps').modal('toggle');
-            },250);
-        });
-        return false;
+        $('#exampleModal_1').modal('toggle');
+        setTimeout(function() {
+            $('#active_email').modal('toggle');
+        },250);
     });
-
-    
-    $("#perezvon_form").submit(function() {
-
-        var th = $(this);
-        $.ajax({
-            type: "POST",
-            url: "zakaz.php", 
-            data: th.serialize()
-        }).done(function() {
-            
-            th.trigger("reset");
-            $('#exampleModal_2').modal('toggle');
-            setTimeout(function() {
-                $('#sps').modal('toggle');
-            },250);
-        });
-        return false;
-    });
-
-    $("#katalog_form").submit(function() {
-
-        var th = $(this);
-        $.ajax({
-            type: "POST",
-            url: "zakaz.php", 
-            data: th.serialize()
-        }).done(function() {
-            
-            th.trigger("reset");
-            $('#exampleModal_3').modal('toggle');
-            setTimeout(function() {
-                $('#sps').modal('toggle');
-            },250);
-        });
-        return false;
-    });
-
-    $("#vopros_form").submit(function() {
-
-        var th = $(this);
-        $.ajax({
-            type: "POST",
-            url: "vopros.php", 
-            data: th.serialize()
-        }).done(function() {
-            
-            th.trigger("reset");
-            $('.button_form_vopros').addClass('good');
-            $('.button_form_vopros').text('Вопрос отправлен!');
-            $('.button_form_vopros').attr('disabled',true);
-
-        });
-        return false;
-    });
-
-
-	
-	
 
 });

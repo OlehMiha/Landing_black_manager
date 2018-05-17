@@ -84,7 +84,6 @@
 
 				<!-- SendPulse Form -->
 				 
-
 				 <div class="col-12 col-lg-6 mov mov_zoomIn_start sp-form-outer sp-force-hide">
 				 	<div id="sp-form-99596" sp-id="99596" sp-hash="a0ae7fe09436817380ba56dcc89100d356ae5045119be31f781437eb0b6c5af1" sp-lang="ru" class="sp-form sp-form-regular sp-form-embed" sp-show-options="%7B%22satellite%22%3Afalse%2C%22maDomain%22%3A%22login.sendpulse.com%22%2C%22formsDomain%22%3A%22forms.sendpulse.com%22%2C%22condition%22%3A%22onEnter%22%2C%22scrollTo%22%3A25%2C%22delay%22%3A10%2C%22repeat%22%3A3%2C%22background%22%3A%22rgba(0%2C%200%2C%200%2C%200.5)%22%2C%22position%22%3A%22bottom-right%22%2C%22animation%22%3A%22%22%2C%22hideOnMobile%22%3Afalse%2C%22urlFilter%22%3Afalse%2C%22urlFilterConditions%22%3A%5B%7B%22force%22%3A%22hide%22%2C%22clause%22%3A%22contains%22%2C%22token%22%3A%22%22%7D%5D%7D">
 				 		<div class="sp-form-fields-wrapper">
@@ -364,10 +363,10 @@
             </p>
 
             <div class="a_modal_mail_div">
-                <a href="#" class="a_modal_mail yd"></a>
-                <a href="#" class="a_modal_mail gm"></a>
-                <a href="#" class="a_modal_mail mr"></a>
-                <a href="#" class="a_modal_mail ram"></a>
+                <a href="https://mail.yandex.ua/" class="a_modal_mail yd"></a>
+                <a href="https://mail.google.com/" class="a_modal_mail gm"></a>
+                <a href="https://mail.ru/" class="a_modal_mail mr"></a>
+                <a href="https://mail.rambler.ru/" class="a_modal_mail ram"></a>
             </div>
 
             <p>
@@ -538,7 +537,23 @@
 <!-- Custom -->
 <script type='text/javascript' src="js/custom.js" defer></script>
 
-<!-- Optional JavaScript -->
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+<!-- PHP SPS JavaScript -->
+<?php
+    if($_GET['sps'] == 1){
+?>
+        <script>
+            $(document).ready(function(){ 
+                setTimeout(function() {
+                    $('#sps').modal('toggle');
+                },250);
+            });
+        </script>
+<?php
+    }
+?>
+
+
 </body>
 </html>
